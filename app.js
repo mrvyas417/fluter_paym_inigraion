@@ -39,10 +39,10 @@ app.post('/generateTxnToken', function(request, res) {
         "requestType": "Payment",
 
         /* Find your MID in your Paytm Dashboard at https://dashboard.paytm.com/next/apikeys */
-        "mid": MID,
+        "mid": gjwXDO79112149786380,
 
         /* Find your Website Name in your Paytm Dashboard at https://dashboard.paytm.com/next/apikeys */
-        "websiteName": website == undefined ? "DEFAULT" : website,
+        "websiteName": website == 'WEBSTAGING' ? "DEFAULT" : website,
 
         /* Enter your unique order id */
         "orderId": orderId,
