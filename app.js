@@ -45,11 +45,12 @@ app.post('/generateTxnToken', function(request, res) {
         "websiteName": website == 'WEBSTAGING' ? "DEFAULT" : website,
 
         /* Enter your unique order id */
-        "orderId": orderId,
+        "orderId": "12334",
 
         /* on completion of transaction, we will send you the response on this URL */
         // "callbackUrl": "https://mrdishant.com",
-        "callbackUrl": callbackUrl,
+        "callbackUrl": "https://securegw.paytm.in/theia/paytmCallback?ORDER_ID=12334"
+        ,
 
         /* Order Transaction Amount here */
         "txnAmount": {
@@ -65,7 +66,7 @@ app.post('/generateTxnToken', function(request, res) {
         "userInfo": {
 
             /* unique id that belongs to your customer */
-            "custId": custId,
+            "custId": "122",
         },
 
     };
