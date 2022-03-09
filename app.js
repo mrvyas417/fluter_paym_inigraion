@@ -11,8 +11,8 @@ paytmParams.body = {
     "requestType"   : "Payment",
     "mid"           : "gjwXDO79112149786380",
     "websiteName"   : "WEBSTAGING",
-    "orderId"       : "ORDERID_98765",
-    "callbackUrl"   : "https://paytm-inti-backend-flutter.herokuapp.com/",
+    "orderId"       : "ORDERID_98761",
+    "callbackUrl"   : "https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=ORDERID_98761",
     "txnAmount"     : {
         "value"     : "100.00",
         "currency"  : "INR",
@@ -43,7 +43,7 @@ PaytmChecksum.generateSignature(JSON.stringify(paytmParams.body), "uK3ozrlWSmaW_
         // hostname: 'securegw.paytm.in',
 
         port: 443,
-        path: '/theia/api/v1/initiateTransaction?mid=gjwXDO79112149786380&orderId=ORDERID_98765',
+        path: '/theia/api/v1/initiateTransaction?mid=gjwXDO79112149786380&orderId=ORDERID_98761',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
